@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    </head>
+    <body>
+    <a-scene>
+        <!--Assets-->
+        <a-assets timeout="30000">
+            <a-asset-item id="sofa" src="./sofa/scene.gltf"></a-asset-item>
+        </a-assets>
+        <!--Floor-->
+        <a-plane position="0 0 -3" rotation="-90 0 0" width="5" height="5" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/wood/hardwood2_diffuse.jpg"></a-plane>
+        <!--Wall-->
+        <a-plane position="0 2.5 -5.5" scale="5 5 0" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/bricks/brick_diffuse.jpg" ></a-plane>
+        <!--Painting-->
+        <a-plane position="0 3 -5.45" scale="3 2 0" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/illustration/758px-Canestra_di_frutta_(Caravaggio).jpg" ></a-plane>
+        <!--Sofa-->
+        <a-entity position="0 0 -4" rotation="0 90 0" scale="0.05 0.05 0.05" gltf-model="#sofa"></a-entity>
+        <!--Lightbulb-->
+        <a-cylinder position="0 4 -3" radius="0.05" height="0.5" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/reflection/metal.jpg"></a-cylinder>
+        <a-cone position="0 4 -3" scale="0.5 0.5 0.5" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/reflection/metal.jpg"></a-cone>
+        <a-sphere position="0 3.7 -3" scale="0.3 0.3 0.3" src="https://t4.ftcdn.net/jpg/00/78/43/39/360_F_78433903_NlOa98tptWiIvvAmpra5InSvWTnvpPH2.jpg" ></a-sphere>
+    </a-scene>
+    </body>
+</html>
